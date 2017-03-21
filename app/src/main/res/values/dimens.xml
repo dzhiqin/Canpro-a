@@ -3,7 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="custom_titlebar_height">60.0dp</dimen>
-    <dimen name="textsize_lardge">36.0sp</dimen>
-    <dimen name="textsize_normal">30.0sp</dimen>
-    <dimen name="textsize_small">26sp</dimen>
+    <dimen name="mainbottom_icon_height">25dp</dimen>
+    <dimen name="mainbottom_icon_width">30dp</dimen>
+
+    <dimen name="textsize_lardge">20sp</dimen>
+    <dimen name="textsize_normal">15sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
 </resources>

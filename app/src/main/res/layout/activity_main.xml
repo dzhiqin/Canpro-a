@@ -12,6 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+        <android.support.v4.view.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabpager">
+
+        </android.support.v4.view.ViewPager>
 
     </LinearLayout>
     <LinearLayout
@@ -20,25 +26,62 @@
         android:id="@+id/bottombar"
         android:orientation="horizontal">
         <RelativeLayout
+            android:id="@+id/bottom_function_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@mipmap/maintabbg_sel">
-
-            <ImageView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/img_function"
+                android:orientation="vertical"
                 android:layout_centerInParent="true"
-                android:background="">
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_function"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/btcontrl_icon_sel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_function"
+                    android:textSize="@dimen/textsize_small"
+                    android:text="功能"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
 
         </RelativeLayout>
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/bottom_setting_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@mipmap/maintabbg">
-
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/img_setting"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/btset_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_function"
+                    android:textSize="@dimen/textsize_small"
+                    android:text="设置"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
